@@ -1,0 +1,262 @@
+    body {
+        font-family: poppins, sans-serif;
+        margin: 0 5%;
+        background-image: url(background.jpg); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        width: 1920px;
+        height: 1080px;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(43, 20, 255);
+        clip-path: circle(30% at right 30%);
+        z-index: 1;
+    }
+
+    body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(11, 226, 3);
+        clip-path: circle(20% at 10% 10%);
+    }
+
+
+    header {
+        display: flex;
+        height: 200px;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+        font-size: 45px;
+        color: #df3e71;
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    nav {
+    flex: 1;
+    margin-left: 20px;
+        z-index: 1;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .active {
+        background-color: #e43939;
+        border-radius: 1.5em;
+        border: 1px solid rgb(245, 188, 3);
+    }
+
+    .inactive {
+        font-weight: lighter;
+    }
+
+    .logoutbtn {
+        background-color:#FF69B4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .logoutbtn:hover {
+        background-color: #FF1493;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #707070;
+        padding: 15px; 
+    }
+
+    .home {
+        
+    }
+
+    .slider {
+        
+    }
+
+    .slide {
+    height: 640px;
+    display: flex;
+    }
+
+    .image {
+    flex: 1;
+    background-image: url(ima.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    border-radius: 2.5em;
+    height: 800px;
+    z-index: 1;
+    }
+
+    .content {
+    flex: 1;
+    background-color: rgb(224, 95, 95); 
+    padding: 50px;
+    margin-left: 50px;
+    border-radius: 2.5em;
+    margin-bottom: 300px;
+    z-index: 1;
+    }
+
+    /*
+    .content:hover {
+        border: 5px solid blue;
+    }
+    */
+
+    .title {
+        font-size: 35px;
+        color: #fcf7f7;
+        font-weight: bold;
+        margin-left: 100px;
+        
+    }
+
+    .subtitle{
+    margin-left: 120px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+    }
+
+    .email {
+        margin-top: 300px;
+        margin-left: 300px;
+        margin-bottom: 50px;
+    }
+
+    input {
+        padding: 15px;
+        padding-left: 100px;
+        font-size: 25px;
+        background-color: #e3e4e9;
+        border: none;
+        border-radius: 1.5em;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    @media(max-width: 991px)
+        /*this is where it got really difficult*/ {
+        body {
+            background-size: 2000px 1920px;
+            width: 390px;
+            height: 844px;
+        }
+        header {
+            padding: 5px;
+            height: 20px;
+            width: 10px;
+            margin-top: 60px;
+            display: flex
+        }
+    .logo {
+        margin-bottom: 40px;
+        font-size: 25px;
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+    }
+        nav {
+            display: inline-flex;
+            z-index: 1;
+            margin-bottom: -300px;
+            margin-left: -10px  
+        } 
+        ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: block;
+        font-size: 10px;
+        font-weight: bold;
+    }
+        input {
+        width: 200px;
+        margin-top: -150px;
+        padding: 10px;
+        visibility: hidden;
+        text-align: center;
+        font-size: 15px;
+        background-color: #0b33fc;
+        border: none;
+        border-radius: 3em;
+        margin-left: -270px;
+    }
+        label {
+        visibility: hidden;
+    }
+        .content {
+    padding: 50px;
+    margin-left: -200px;
+    margin-right: 150px;
+    border-radius: 2.5em;
+    margin-bottom: -250px;
+    margin-top: 620px
+    }
+        .title {
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+        margin-left: 100px;
+        
+    }
+        .subtitle{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    }
+        .image {
+    flex: 1;
+    background-image: url(ima.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2.5em;
+    height: 600px;
+    margin-right: -200px;
+    }
+    }

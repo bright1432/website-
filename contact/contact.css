@@ -1,0 +1,388 @@
+body {
+    font-family: poppins, sans-serif;
+    margin: 0 5%;
+    background-image: url( background.jpg) ;
+    background-size: 2200px 1350px;
+    background-repeat: no-repeat;
+    display: grid;
+    width: 1920px;
+    height: 1080px;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: deeppink;
+    clip-path: circle(30% at right 30%);
+    z-index: 1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 6, 6);
+    clip-path: circle(20% at 10% 10%);
+    z-index: 0;
+}
+
+header {
+    display: flex;
+    height: 200px;
+    padding: 30px;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 40px;
+    font-size: 45px;
+    color: #df3e71;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    cursor: default;
+}
+
+nav {
+   flex: 1;
+   margin-left: 20px;
+   z-index: 1;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #ffcadb;
+    border-radius: 1.5em;
+    border: 1px solid hotpink;
+}
+
+.inactive {
+    font-weight: lighter;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    color: #707070;
+}
+
+.home {
+    
+}
+
+.image {
+    z-index: 1
+}
+
+.slider {    
+}
+
+.slide {
+   height: 640px;
+   display: flex;
+    z-index: 1;
+}
+
+ 
+ 
+
+.content {
+   flex: 1;
+   background-color: #dbf6fe;
+   padding: 50px;
+   margin-left: 50px;
+   border-radius: 2.5em;
+   display: grid;
+   z-index: 1;
+}
+
+.content:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.title {
+    font-size: 35px;
+    color: #df3e71;;
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+
+
+
+.email {
+    margin-top: 300px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 15px;
+    padding-left: 100px;
+    font-size: 25px;
+    background-color: #e3e4e9;
+    border: none;
+    border-radius: 1.5em;
+    box-shadow: 100px;
+}
+
+label {
+    font-size: 25px;
+}
+
+.instagram {
+    display: flex;
+    margin-top: 40px;
+}
+
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    background-image: url(instagram.png);
+    width: 75px;
+}
+
+.location {
+    display: flex;
+    margin-top: 40px;
+}
+
+.iconame {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #707070;
+    cursor: pointer;
+}
+
+.pin {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    background-image: url(pin.png);
+    width: 75px;
+}
+
+.telephone {
+    display: flex;
+    margin-top: 40px;
+}
+
+.call {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    background-image: url(call.png);
+    width: 75px;
+    margin-bottom:
+}
+
+.box {
+    cursor: pointer;
+    display: flex;
+    background-color: #df3e71;
+    color: black;
+    margin-top: 50px;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 90px;
+    border-radius: 1.5em;
+    transition: all 300ms ease-in-out;
+    transform: translate(40px, 1px);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+
+@media(max-width: 991px) {
+   body {
+        background-size: 1600px 1150px;
+        width: 390px;
+        height: 844px;
+    }
+    
+    header {
+        padding: 5px;
+        height: 20px;
+        width: 10px;
+        margin-top: 60px;
+        display: flex
+    }
+    
+   .logo {
+    margin-bottom: 40px;
+    font-size: 20px;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+}
+    
+    nav {
+        position: absolute;
+        display: flex;
+        margin-bottom: -300px;
+        margin-left: 270px;
+        background-color: none;
+        border-radius: 15px;
+        z-index: 2;
+        line-height: 5px
+}
+    
+    ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+   li {
+    display: block;
+    font-size: 8px;
+    font-weight: bold;
+}
+    
+.active {
+    } 
+    
+    input {
+    padding: 5px;
+    padding-left: -200px;
+    font-size: 10px;
+    background-color: #e3e4e9;
+    border: none;
+    border-radius: 1.5em;
+    margin-left: -270px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+    label {
+    font-size: 10px;  
+    margin-left: -150px;
+    align-content: center;
+    padding-bottom: 50px;
+    font-weight: bold;
+    visibility: hidden;
+}
+    
+    .content {
+   background-color: #0930f0;
+   padding: 20px;
+   margin-left: -150px;;
+   border-radius: 2.5em;
+   margin-bottom: -50px;
+   margin-top: 450px;
+   width: 100px;
+   height: 300px;
+}
+    .title {
+    font-size: 17px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 50px;
+    
+}
+    .subtitle{
+   margin-left: 120px;
+   margin-top: 5px;
+   font-weight: 600;
+   font-size: 15px;
+   color: white;
+}
+   video {
+   flex: 1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 500px;
+   width: 300px;
+   margin-right: -200px;
+}
+    .image {   
+    }
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    background-image:url(instagram.png);
+    width: 75px;
+    margin-left: 50px;
+    margin-right: -75px;
+}
+    .iconame {
+        font-size: 12px;
+        margin-left: 50px;
+        text-align:end;
+    }
+/*had to do some sort of magic here to make things happen*/
+ .location {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    background-image:url(pin.png);
+    width: 75px;
+    margin-left: 50px;
+}
+    
+.telephone {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    background-image:url(call.png);
+    width: 75px;
+    margin-left: 50px;
+}   
+    
+    .box {
+    display: flex;
+    margin-top: 0px;
+    margin-left: -40px;
+    margin-right: 50px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-right: 90px;
+    border-radius: 1.5em;
+    transition: all 300ms ease-in-out;
+    transform: translate(40px, 1px);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+    a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+}

@@ -1,0 +1,346 @@
+body {
+    font-family: poppins, sans-serif;
+    margin: 0 5%;
+    background-image: url(background.jpg);
+/*    background-image: url(layout.png);*/
+    background-size: 2200px 1350px;
+    background-repeat: no-repeat;
+    display: grid;
+    width: 1920px;
+    height: 1080px;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  rgb(43, 20, 255);
+    clip-path: circle(30% at right 30%);
+    z-index: 1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(11, 226, 3);
+    clip-path: circle(20% at 10% 10%);
+}
+
+
+header {
+    display: flex;
+    height: 200px;
+    padding: 30px;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 40px;
+    font-size: 45px;
+    color: #df3e71;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    cursor: default;
+}
+
+nav {
+   flex: 1;
+   margin-left: 20px;
+    z-index: 2;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #e43939;
+    border-radius: 1.5em;
+    border: 1px solid rgb(245, 188, 3);
+}
+.inactive {
+    font-weight: lighter;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #707070;
+    padding: 15px; 
+}
+
+.home {
+    
+}
+
+.slider {
+    
+}
+
+.slide {
+   height: 640px;
+   display: flex;
+}
+
+.slide2 {
+   margin-top: 300px;
+   height: 640px;
+   display: flex;
+    
+}
+
+.image {
+   flex: 1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 2.5em;
+   height: 800px;
+   background-image: url(IMG-20240503-WA0097.jpg );
+    z-index: 1
+}
+
+.image2 {
+   flex: 1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 2.5em;
+   height: 800px;
+   background-image: url(IMG-20240503-WA0110.jpg);  
+}
+
+.content {
+   flex: 1;
+   background-color: #dbf6fe;
+   padding: 50px;
+   padding-right: 50px;
+   margin-left: 50px;
+   border-radius: 2.5em;
+   margin-bottom: 150px;
+   display: grid;
+    width: 400px;
+    z-index: 1;
+}
+
+.content:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.award1 {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(award.png);
+   height: 155px;
+   width: 150px;
+   margin-top: 20px;
+   margin-bottom: 50px;
+   margin-left: 290px;
+   cursor: pointer;
+}
+
+.award2 {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(award2.png);
+   height: 220px;
+   width: 300px;
+   margin-top: -185px;
+   margin-bottom: 30px;
+   margin-left: 400px;
+   cursor: pointer;
+}
+
+.content2 {
+   flex: 1;
+   background-color: #dbf6fe;
+   padding: 50px;
+   margin-left: 50px;
+   border-radius: 2.5em;
+   margin-bottom: 300px;
+   display: grid;
+}
+
+.content2:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.title {
+    font-size: 35px;
+    color: #000c7a;
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+
+.subtitle{
+   margin-left: 120px;
+   margin-top: 20px;
+   font-weight: 600;
+   font-size: 28px;
+   color: black;
+   display: flex;
+}
+
+.email {
+    margin-top: 300px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 15px;
+    padding-left: 100px;
+    font-size: 25px;
+    background-color: #e3e4e9;
+    border: none;
+    border-radius: 1.5em;
+    box-shadow: 100px;
+}
+
+label {
+    font-size: 25px;
+}
+
+@media(max-width: 991px) {
+    body {
+        width: 390px;
+        height: 844px
+    }
+    
+    body::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    width: 100%;
+    height: 100%;
+    background: rgb(240, 8, 8);
+    clip-path: circle(30% at right 30%);
+    z-index: 1;
+}
+
+    
+    nav {
+      z-index: 1;
+    }
+    
+    .logo {
+    font-size: 35px;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px
+}
+    
+    li.active {
+    margin-right: 200px;
+    border-radius: 20px;
+    border: 1px solid hotpink;
+}
+    .image {
+   position: sticky;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 2.5em;
+   height: 600px;
+   width: 400px;
+   background-image: url(dentist3.jpg)
+}
+    .image2 {
+   flex: 1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 2.5em;
+   height: 800px;
+   background-image: url(Childrens-Dentist-Regina-SK.jpg)
+}
+    .content {
+   flex: 1;
+   background-color: #e3e4e9;
+   padding: 50px;
+   padding-right: 50px;
+   margin-left: 50px;
+   margin-right: -60px;
+   border-radius: 2.5em;
+   margin-bottom: 0px;
+   display: grid;
+    width: 400px;
+}
+    .content2 {
+   flex: 1;
+   background-color: #e3e4e9;
+   padding: 50px;
+   margin-left: 50px;
+   border-radius: 2.5em;
+   margin-bottom: 20px;
+   display: grid;
+}
+    li {
+    display:block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .input {
+    font-size: 20px;
+    padding-left: 100px;
+    margin-bottom: -20px
+}
+    label {
+    font-weight: bold;
+    margin-left: 50x;
+    align-content: center;
+    padding-bottom: 50px;
+}
+    .award1 {
+        margin-left: 50px;
+    }
+    .email {
+        margin-left: -10px
+    }
+.award2 {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(award2.png);
+   height: 220px;
+   width: 300px;
+   margin-top: -230px;
+   margin-bottom: 30px;
+   margin-left: 140px;
+}
+    
+.subtitle{
+    color: black
+    }
+}

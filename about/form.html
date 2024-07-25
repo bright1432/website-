@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+    <title>Dental website</title>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+ <h1><img src=" logo.png" alt="Dental practice logo "></h1>
+ 
+    </div>  
+</header>
+    <section class="home">
+        <div class="slider">
+        <div class="slide">
+            <div class="image"></div>
+            <form name="contact" method="post" action="process.php">
+                <div class="notice" style="font-weight: bold">FILL THE FORMS BELOW TO BOOK AN APOINTMENT.</div>
+
+                 
+
+                <div>
+                    <label>First Name: </label>
+                    <input type="text" name="first_name" placeholder="First Name">
+                </div>
+                <br />
+
+                <div>
+                    <label>Last Name: </label>
+                    <input type="text" name="last_name" placeholder="Last Name">
+                </div>
+                <br />
+
+                <div>
+                    <label>Mobile Number: </label>
+                    <input type="text" name="mobile_number" placeholder="Mobile Number">
+                </div>
+                <br />
+
+                <div>
+                    <label>Email: </label>
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+                <br />
+
+                 
+
+                <div>
+                    <label>Gender: </label>
+                    <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <br />
+
+                <div>
+                    <label>Age: </label>
+                    <input type="text" name="age" placeholder="Age">
+                </div>
+                <br />
+
+                <div>
+                    <label>Preferred Day: </label>
+                    <input type="date" name="preferred_day">
+                </div>
+                <br />
+
+                <div>
+                    <label>Preferred Time: </label>
+                    <input type="time" name="preferred_time">
+                </div>
+                <br />
+
+                <input type="submit" name="submit" value="Submit" class="button">
+            </form>
+
+</div>
+        </div>
+    </section>
+    
+
+   
+</body>
+    
+</html>

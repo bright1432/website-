@@ -1,0 +1,272 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0 5%;
+    background-image: url( background.jpg);
+    background-size: 2500px 2200px;
+    background-repeat: no-repeat;
+    display: grid;
+    width: 1920px;
+    height: 1080px;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: deeppink;
+    clip-path: circle(30% at right 30%);
+    z-index: 1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(209, 8, 8);
+    clip-path: circle(20% at 10% 10%);
+}
+
+header {
+    display: flex;
+    height: 200px;
+    padding: 30px;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 40px;
+    font-size: 45px;
+    color: #df3e71;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    cursor: default;
+}
+
+nav {
+   flex: 1;
+   margin-left: 20px;
+    z-index: 1;
+}
+
+.list1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+ol {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #ffcadb;
+    border-radius: 1.5em;
+    border: 1px solid hotpink;
+}
+
+.inactive {
+    font-weight: lighter;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #707070;
+    padding: 15px; 
+}
+
+.home {
+    
+}
+
+.slider {
+    
+}
+
+.slide {
+   height: 640px;
+   display: flex;
+}
+
+.image {
+   flex: 1;
+   background-size: cover;
+   background-repeat: repeat; 
+   background-position: center;
+   border-radius: 2.5em;
+   height: 500px;
+   background-image: url(IMG-20240503-WA0103.jpg)   
+}
+ 
+
+.content {
+   flex: 1;
+   background-color: #dbf6fe;
+   padding: 50px;
+   margin-left: 100px;
+   margin-right: 250px;
+   border-radius: 2.5em;
+   margin-bottom: 50px;
+   display: grid;
+   z-index: 1
+}
+
+/*
+.content:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+*/
+
+.title {
+    font-size: 35px;
+    color: #df3e71;
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+
+.subtitle{
+   margin-left: 120px;
+   margin-top: 20px;
+   font-weight: 600;
+   font-size: 28px;
+   color: black;
+    cursor: default;
+}
+
+.email {
+    margin-top: 300px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 15px;
+    padding-left: 100px;
+    font-size: 25px;
+    background-color: #e3e4e9;
+    border: none;
+    border-radius: 1.5em;
+    box-shadow: 100px;
+}
+
+label {
+    font-size: 25px;
+}
+
+@media(max-width: 991px) {
+   body {
+        background-size: 720px 1080px;
+        width: 390px;
+        height: 844px;
+        background-repeat: no-repeat;
+    }
+    header {
+        padding: 5px;
+        height: 20px;
+        width: 10px;
+        margin-top: 60px;
+        display: flex
+    }
+   .logo {
+    margin-bottom: 40px;
+    font-size: 25px;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+}
+    nav {
+        display: inline-flex;
+        z-index: 1;
+        margin-bottom: -300px;
+        margin-left: 5px;
+        background: none;
+        border-radius: 5em;
+} 
+    ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+}
+   li {
+    display: block;
+    font-size: 7px;
+    font-weight: bold;
+}
+    
+li .active {
+    background-color: #3f6435;
+    border-radius: 3em;
+    border: 1px solid rgb(218, 13, 13);
+}
+    input {
+    padding: 5px;
+    padding-left: -200px;
+    font-size: 10px;
+    background-color: #e3e4e9;
+    border: none;
+    border-radius: 1.5em;
+    margin-left: -270px;
+    margin-top: 20px
+}
+    label {
+    font-size: 10px;  
+    margin-left: -150px;
+    align-content: center;
+    padding-bottom: 50px;
+    font-weight: bold;
+    visibility: hidden;
+}
+    .content {
+   background-color: #e3e4e9;
+   padding: 50px;
+   margin-left: -200px;
+   margin-right: 150px;
+   border-radius: 2.5em;
+   margin-bottom: -420px;
+   margin-top: 620px
+}
+    .title {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+    .subtitle{
+   margin-left: 120px;
+   margin-top: 5px;
+   font-weight: 600;
+   font-size: 15px;
+   color: black;
+}
+    .image {
+   flex: 1;
+   background-image: url( IMG-20240503-WA0086.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 2.5em;
+   height: 600px;
+   margin-right: -200px;
+   z-index: 1;
+}
+}
